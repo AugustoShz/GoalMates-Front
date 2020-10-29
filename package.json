@@ -2,6 +2,7 @@
   "name": "goalmatesfront",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://augustoshz.github.io/GoalMates-Front/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -38,9 +41,13 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
     "eslint": "^7.12.1",
     "eslint-import-resolver-typescript": "^2.3.0"
+=======
+    "gh-pages": "^3.1.0"
+>>>>>>> b39c99dee468db917435a84eff89d44662776ccb
   }
 }
