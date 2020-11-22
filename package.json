@@ -4,19 +4,26 @@
   "private": true,
   "homepage": "https://augustoshz.github.io/GoalMates-Front/",
   "dependencies": {
+    "@apollo/client": "^3.2.7",
+    "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "2.21.2",
     "eslint-plugin-jsx-a11y": "6.3.0",
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4",
+    "graphql": "^15.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.0",
+    "serviceworker": "^0.1.7",
     "typescript": "^4.0.5",
     "web-vitals": "^0.2.4"
   },
@@ -41,13 +48,10 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@types/react": "^16.9.55",
-    "@types/react-dom": "^16.9.9",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "eslint": "^7.12.1",
-    "eslint-import-resolver-typescript": "^2.3.0"
-=======
+    "eslint-import-resolver-typescript": "^2.3.0",
     "gh-pages": "^3.1.0"
->>>>>>> b39c99dee468db917435a84eff89d44662776ccb
   }
 }

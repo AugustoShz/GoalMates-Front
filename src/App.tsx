@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
-function App(): ReactElement {
+function App(): React.ReactElement {
   return <h1>Hello World</h1>;
 }
 
