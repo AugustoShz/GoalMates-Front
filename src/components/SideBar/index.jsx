@@ -4,6 +4,8 @@ import {Wrapper} from './styles'
 class SideBar extends Component {
   constructor(props) {
     super(props);
+
+    this.state={}
   }
 
   classNameSelect(){

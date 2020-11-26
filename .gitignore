@@ -10,7 +10,6 @@
 
 # production
 /build
-teste
 
 # misc
 .DS_Store
@@ -22,6 +21,7 @@ teste
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
 
 #localconfigs
 /utils/config.js

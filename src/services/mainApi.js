@@ -29,7 +29,6 @@ mainApi.interceptors.request.use(
 mainApi.interceptors.response.use(
   (response) => response,
   (error) => {
-    const currentPath = document.location.pathname.split("/")[1];
     if (
       error.response &&
       Number(error.response.status) === 401
