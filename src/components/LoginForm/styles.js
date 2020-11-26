@@ -82,6 +82,10 @@ export const Wrapper = styled.div`
       cursor: pointer;
     }
 
+    .login-form-signup{
+      background-color: green;
+    }
+
     .login-forgot-password{
       background-color: transparent;
       border:none;
@@ -105,4 +109,22 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
+`
+
+export const Line = styled.div`
+border-top: solid black 1px;
+width: 100%;
+margin-top: 5px;
+margin-bottom: 5px;
+`
+
+export const ModalCard = styled.div`
+background-color: white;
+border-radius: 20px;
+outline: none;
+padding: 15px;
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 15px;
 `
