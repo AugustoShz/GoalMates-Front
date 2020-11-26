@@ -19,7 +19,6 @@ class Routes extends Component {
   }
 
   handleHomeClick = () =>{
-    window.location.reload(false);
   }
 
   handleClose = () => {
@@ -29,13 +28,13 @@ class Routes extends Component {
   }
 
   render() {
-    const { path, component, homeFeed, ...rest } = this.props;
-    const open  = homeFeed ? true : this.state.open
+    const { path, component, ...rest } = this.props;
+    const open  = this.state.open
     return (
       <noToolbar style={{overflowX: "hidden", maxWidth: "100vw"}}>
         <SideBar open={open} handleClose={this.handleClose}/>
         <div style={{display:"grid", gridTemplateRows:"50px auto", height: "100vh"}}>
-          <TopBar handleBurgerClick={this.handleBurgerClick} handleHomeClick = {this.handleHomeClick} hasBurger={!homeFeed}/>
+          <TopBar handleBurgerClick={this.handleBurgerClick} handleHomeClick = {this.handleHomeClick} hasBurger/>
           <div style={{height: "100%", display: "flex"}}>
             <Route path={path} component={component} {...rest} />
           </div>
