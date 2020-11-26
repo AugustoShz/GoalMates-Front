@@ -54,11 +54,15 @@ class Feed extends Component{
       <>
       <SideBar open right></SideBar>
       <Wrapper>
+      <div/>
+      <div className= "posts">
         {
           posts.length ?
-          posts.map(post => <PostTemplate />) :
+          posts.map(post => <><PostTemplate post={post}/></>) :
           <span className="no-posts">Não há nenhuma publicação</span>
         }
+        </div>
+        <div/>
       </Wrapper>
       </>
     )

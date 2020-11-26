@@ -3,9 +3,13 @@ import {Wrapper} from './styles'
 
 class PostTemplate extends Component{
 render(){
+  const { post } = this.props
+
   return(
     <Wrapper>
-      aaaa
+      <p>{post.username}</p>
+      <p>{post.body}</p>
+      <p>{post.createdAt}</p>
     </Wrapper>
   )
 }
