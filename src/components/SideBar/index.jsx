@@ -1,21 +1,30 @@
 import React, { Component } from "react";
 import {Wrapper} from './styles'
 
-class TopBar extends Component {
+class SideBar extends Component {
   constructor(props) {
     super(props);
   }
 
+  classNameSelect(){
+    const {open, right} = this.props
+
+    if(open) return "animate-open-" + (right ? "right" : "left")
+    else return "animate-close-" + (right ? "right" : "left")
+
+  }
+
   render() {
-    const { open } = this.props
+    const { handleClose, children } = this.props
+
     return (
       <Wrapper>
-        <div className={open ? "animate-left" : "animate-right"}>
-
+        <div className={this.classNameSelect()} onMouseLeave={handleClose}>
+          {children}
         </div>
       </Wrapper>
     );
   }
 }
 
-export default TopBar;
+export default SideBar;

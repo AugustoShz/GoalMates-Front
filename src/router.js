@@ -16,7 +16,7 @@ class Routes extends Component {
       <Router>
         <Switch>
           <LoginRoutes path="/" component={LoginForm} exact />
-          <FeedRoutes path="/feed" component={Feed} />
+          <FeedRoutes path="/feed" component={Feed} homeFeed/>
         </Switch>
       </Router>
     );

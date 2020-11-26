@@ -1,37 +1,57 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  height:100%;
-
-  .animate-right {
-    position: relative;
-    animation: animateright 0.4s;
+  .animate-close-right {
+    position: absolute;
+    right: -20%;
+    top: 50px;
+    background-color: #7b68ee;
+    width: 20%;
+    height: calc(100% - 50px);
+  }
+  .animate-open-right {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    animation: animateOpenRight 1s;
+    background-color: #7b68ee;
+    width: 20%;
+    height: calc(100% - 50px);
   }
 
-  @keyframes animateright {
+  @keyframes animateOpenRight {
     from {
-      right: 0;
-      opacity: 1;
-      width: 20%;
-      height: 100%;
-      background-color: #7b68ee;
-    }
-    to {
-      right: 300;
+      right: -20%;
       opacity: 0;
     }
+    to {
+      right: 0;
+      opacity: 1;
+    }
   }
 
-  .animate-left {
-    position: relative;
-    animation: animateleft 1s;
-    width: 20%;
-    height: 100%;
+
+
+  .animate-close-left {
+    position: absolute;
+    left: -20%;
+    top: 50px;
     background-color: #7b68ee;
+    width: 20%;
+    height: calc(100% - 50px);
   }
-  @keyframes animateleft {
+  .animate-open-left {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    animation: animateOpenLeft 1s;
+    background-color: #7b68ee;
+    width: 20%;
+    height: calc(100% - 50px);
+  }
+  @keyframes animateOpenLeft {
     from {
-      left: -300px;
+      left: -20%;
       opacity: 0;
     }
     to {

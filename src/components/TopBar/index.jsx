@@ -25,14 +25,19 @@ class TopBar extends Component {
       handleBurgerClick,
       handleHomeClick,
       handleConfigClick,
+      hasBurger
     } = this.props;
     return (
       <Wrapper>
         <div className="top-bar-left">
+          { hasBurger ? 
           <Menu
             style={{ fontSize: "40px", cursor: "pointer" }}
             onClick={handleBurgerClick}
           />
+          :
+          ""
+          }
           <HomeOutlined
             style={{ fontSize: "40px", cursor: "pointer" }}
             onClick={handleHomeClick}

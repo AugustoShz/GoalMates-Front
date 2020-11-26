@@ -1,16 +1,21 @@
 import React, {Component} from 'react'
 import mainApi from '../../services/mainApi'
 import to from 'await-to-js'
+import { SideBar, PostTemplate } from '../' //Components
+import { Wrapper } from './styles'
+
 
 class Feed extends Component{
   constructor(props){
     super(props)
 
-    this.state={}
+    this.state={ 
+      posts: []
+    }
   }
 
-  componentDidMount = async() => {
-    const [err, response] = await to(mainApi.post("/", {
+  getPosts = async () => {
+    const [postErr, posts] = await to(mainApi.post("/", {
       query:
         `query {
           getPosts {
@@ -28,14 +33,34 @@ class Feed extends Component{
         `
     }))
 
-    if(err) console.log("Erro")
+    if(postErr) {
+      console.log("Erro ao buscar feed") 
+      return
+  }
 
-    console.log(response)
+    this.setState({
+      posts: posts.data.data.getPosts
+    })
+  }
+
+  componentDidMount = async() => {
+    await this.getPosts();
   }
   
   render(){
+    const { posts } = this.state
+
     return(
-      <></>
+      <>
+      <SideBar open right></SideBar>
+      <Wrapper>
+        {
+          posts.length ?
+          posts.map(post => <PostTemplate />) :
+          <span className="no-posts">Não há nenhuma publicação</span>
+        }
+      </Wrapper>
+      </>
     )
   }
 }
