@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "//augustoshz.github.io/GoalMates-Front/static/js/main.14b4e225.chunk.js",
+    "main.js.map": "//augustoshz.github.io/GoalMates-Front/static/js/main.14b4e225.chunk.js.map",
+    "runtime-main.js": "//augustoshz.github.io/GoalMates-Front/static/js/runtime-main.5081585d.js",
+    "runtime-main.js.map": "//augustoshz.github.io/GoalMates-Front/static/js/runtime-main.5081585d.js.map",
+    "static/js/2.6ed38f12.chunk.js": "//augustoshz.github.io/GoalMates-Front/static/js/2.6ed38f12.chunk.js",
+    "static/js/2.6ed38f12.chunk.js.map": "//augustoshz.github.io/GoalMates-Front/static/js/2.6ed38f12.chunk.js.map",
+    "index.html": "//augustoshz.github.io/GoalMates-Front/index.html",
+    "static/js/2.6ed38f12.chunk.js.LICENSE.txt": "//augustoshz.github.io/GoalMates-Front/static/js/2.6ed38f12.chunk.js.LICENSE.txt",
+    "static/media/LogoPretoTransparente.393117e5.svg": "//augustoshz.github.io/GoalMates-Front/static/media/LogoPretoTransparente.393117e5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5081585d.js",
+    "static/js/2.6ed38f12.chunk.js",
+    "static/js/main.14b4e225.chunk.js"
+  ]
+}
